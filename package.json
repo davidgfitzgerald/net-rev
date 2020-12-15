@@ -1,0 +1,24 @@
+{
+  "name": "net-rev",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Networking Revision",
+  "main": "./src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "inflection": "^1.12.0",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
