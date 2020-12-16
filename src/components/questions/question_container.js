@@ -12,7 +12,7 @@ class QuestionContainer extends Component {
       asked: [],
       isLoaded: false
     }
-    this.askNext = this.askNext.bind(this)
+    // this.askNext = this.askNext.bind(this)
   }
 
   askNext(questions) {
@@ -20,6 +20,7 @@ class QuestionContainer extends Component {
   }
 
   componentDidMount() {
+    console.time("questions")
     fetch('/api/questions')
       .then(res => res.json())
       .then(allQuestions => {
@@ -29,17 +30,18 @@ class QuestionContainer extends Component {
           askNext,
           isLoaded: true
         })
-      })
+      console.timeEnd("questions")})
   }
 
   render() {
     return (
-      <div>
+      <div className="question-container">
+        <h3>Question</h3>
         {(()=> {
           if (this.state.isLoaded) {
             return <Question data={this.state.askNext}/>;
           } else {
-            return <h1>NOT Loaded.</h1>;
+            return <p>Loading..</p>;
           }
         })()}
       </div>

@@ -9,6 +9,6 @@ app.get('/api/questions',(req, resp) => {
   resp.json(questions)
 })
 
-const server = app.listen(port, () => console.log(`Server started on port ${port}`))
+const server = app.listen(port, () => console.log(`Server started listening on port ${port}...`))
 
 // server.close();
