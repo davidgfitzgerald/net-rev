@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionContainer renders (enzyme) 1`] = `
+<div
+  class="question-container"
+>
+  <h3>
+    Question
+  </h3>
+  <p>
+    Loading..
+  </p>
+</div>
+`;
