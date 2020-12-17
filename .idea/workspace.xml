@@ -4,19 +4,11 @@
     <list default="true" id="e463871a-41bc-4100-bf14-cc9bf17566a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/questions/question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/questions/question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/questions/question_container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/questions/question_container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/questions/questions.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/questions/questions.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/questions/question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/questions/question.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/svg/name.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/svg/name.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/svg/name.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/svg/name.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +100,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608048798762</updated>
       <workItem from="1608048801603" duration="22282000" />
-      <workItem from="1608110066429" duration="22618000" />
+      <workItem from="1608110066429" duration="27716000" />
+      <workItem from="1608200003098" duration="806000" />
     </task>
     <servers />
   </component>

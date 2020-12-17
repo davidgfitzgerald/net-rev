@@ -1,36 +1,19 @@
 import React, {Component} from 'react';
-import {alphabet} from "../../utils/utils";
-import {inflect} from 'inflection'
+import {alphabet, inflect} from "../../utils/utils";
 
 class Question extends Component {
   constructor(props) {
     super(props);
     this.data = props.data
-    this.choiceLetters = []
-    this.numberOfCorrectAnswers = 0
-
-    this.setChoiceLetters()
-    this.setNumberOfCorrectAnswers()
+    this.choiceLetters = this.getChoiceLetters()
+    this.correctAnswers = props.data.correctAnswers
+    this.numberOfCorrectAnswers = props.data.correctAnswers.length
 
     this.submitAnswer = this.submitAnswer.bind(this)
-    this.getCorrectAnswers = this.getCorrectAnswers.bind(this)
   }
 
-  setChoiceLetters() {
-    this.choiceLetters = alphabet.substring(0, Object.keys(this.data.choices).length).split("")
-  }
-
-  setNumberOfCorrectAnswers() {
-    this.numberOfCorrectAnswers = this.data.correctAnswers.length
-  }
-
-  getCorrectAnswers() {
-    const data = this.data
-    let answers = ""
-    data.correctAnswers.forEach((letter) => {
-      answers += `${letter}: ${data.choices[letter]}\n`
-    })
-    return answers
+  getChoiceLetters() {
+    return alphabet.substring(0, Object.keys(this.data.choices).length).split("")
   }
 
   getUserAnswers() {
@@ -45,19 +28,22 @@ class Question extends Component {
 
   submitAnswer(event) {
     event.preventDefault()
-    console.log("submitAnswer called")
     let userAnswers = this.getUserAnswers()
+    let correctAnswers = this.correctAnswers
+    console.log(correctAnswers)
+
     let alertString =`You answered:\n`
     userAnswers.forEach((ans)=>{
       alertString += `${ans.id}: ${ans.value}\n`
     })
-    alertString += `\nThe correct answers are:\n${this.getCorrectAnswers()}`
+    alertString += `\nThe correct ${inflect('answer is', correctAnswers.length)}:\n${correctAnswers}`
     alert(alertString)
   }
 
 
 
   render() {
+    console.log("render called")
     const data = this.data
     const choices = this.data.choices
     const numberOfCorrectAnswers = this.numberOfCorrectAnswers
