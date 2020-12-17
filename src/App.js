@@ -1,6 +1,6 @@
 import './App.css';
 import QuestionContainer from "./components/questions/question_container";
-import SVGName from "./components/svg/name";
+import SVGName from "./components/svg/title";
 
 function App() {
   return (
@@ -10,5 +10,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {alphabet, inflect} from "../../utils/utils";
+import {alphabet, inflectPlus} from "../../utils/utils";
 
 class Question extends Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class Question extends Component {
     userAnswers.forEach((ans)=>{
       alertString += `${ans.id}: ${ans.value}\n`
     })
-    alertString += `\nThe correct ${inflect('answer is', correctAnswers.length)}:\n${correctAnswers}`
+    alertString += `\nThe correct ${inflectPlus('answer is', correctAnswers.length)}:\n${correctAnswers}`
     alert(alertString)
   }
 
@@ -53,7 +53,7 @@ class Question extends Component {
         <p>{data.question}</p>
         <form onSubmit={this.submitAnswer}>
           <fieldset>
-              <legend>(Pick {numberOfCorrectAnswers} {inflect('answer', numberOfCorrectAnswers)})</legend>
+              <legend>(Pick {numberOfCorrectAnswers} {inflectPlus('answer', numberOfCorrectAnswers)})</legend>
             <div className="answer-selection">
               {this.choiceLetters.map((letter) => {
                 return (

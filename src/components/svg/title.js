@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './name.css'
+import './title.css'
 
 class SVGName extends Component {
   constructor(props) {
@@ -22,13 +22,6 @@ class SVGName extends Component {
       <path d="M1069.29 42.28C1072.36 41.512 1076.44 40.696 1081.53 39.832C1086.61 38.968 1092.47 38.536 1099.09 38.536C1105.05 38.536 1109.99 39.4 1113.93 41.128C1117.86 42.76 1120.98 45.112 1123.29 48.184C1125.69 51.16 1127.37 54.76 1128.33 58.984C1129.29 63.208 1129.77 67.864 1129.77 72.952V115H1116.37V75.832C1116.37 71.224 1116.04 67.288 1115.37 64.024C1114.79 60.76 1113.78 58.12 1112.34 56.104C1110.9 54.088 1108.98 52.648 1106.58 51.784C1104.18 50.824 1101.21 50.344 1097.65 50.344C1096.21 50.344 1094.73 50.392 1093.19 50.488C1091.65 50.584 1090.17 50.728 1088.73 50.92C1087.38 51.016 1086.13 51.16 1084.98 51.352C1083.93 51.544 1083.16 51.688 1082.68 51.784V115H1069.29V42.28Z" stroke="white" strokeWidth="4"/>
     </svg>
 
-  }
-  componentDidMount() {
-    const logo = document.querySelectorAll("#logo path")
-    console.dir(logo)
-    for (let i= 0; i < logo.length; i++) {
-      // console.log(`${typeof logo[i]} Letter ${i} is ${logo[i].getTotalLength()}`)
-    }
   }
 
   render() {
