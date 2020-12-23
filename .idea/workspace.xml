@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e463871a-41bc-4100-bf14-cc9bf17566a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/questions/__snapshots__/question.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/questions/question.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/questions/question.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,9 +108,9 @@
       <list>
         <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.server" />
         <item itemvalue="npm.build" />
         <item itemvalue="Jest.'answer is' becomes 'answers are' for &gt;1 answers" />
-        <item itemvalue="npm.server" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +126,8 @@
       <workItem from="1608110066429" duration="27716000" />
       <workItem from="1608200003098" duration="8025000" />
       <workItem from="1608227615515" duration="4863000" />
-      <workItem from="1608284070868" duration="601000" />
+      <workItem from="1608284070868" duration="688000" />
+      <workItem from="1608648144119" duration="1400000" />
     </task>
     <servers />
   </component>
